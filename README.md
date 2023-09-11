@@ -1,4 +1,4 @@
-# cypress-cucumber-example
+# cypress-cucumber-pom-framework
 Initial assignment using Cypress with Cucumber.
 
 
