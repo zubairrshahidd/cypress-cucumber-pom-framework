@@ -99,7 +99,7 @@ Then('I verify the count of the Search results on UI and compare it with the API
 })
 
 And('I verify the count of the Search results on UI with the API calls', { scrollBehavior: false }, () => {
-  PracticePage.verifyFirstParameterOfAPICall(propertySearchAPIs.officeListSearchAPI)
+  PracticePage.verifyFirstParameterOfAPICall(propertySearchAPIs.officeListSearchAPI) // using hard-coded API here, as I do not have the dynamic key generation flow, which appears in between (**/_next/data/{key}}/en/**)
 })
 
 Then('I verify the results by location', { scrollBehavior: false }, () => {
