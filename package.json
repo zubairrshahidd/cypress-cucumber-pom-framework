@@ -1,0 +1,37 @@
+{
+  "name": "cypress-cucumber-example",
+  "version": "1.0.0",
+  "description": "Cypress with POM and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.features\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBrainFamily/cypress-cucumber-example.git"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing",
+    "pom"
+  ],
+  "author": "Zubair Shahid",
+  "license": "LH",
+  "homepage": "https://github.com/TheBrainFamily/cypress-cucumber-example#readme",
+  "dependencies": {
+    "cypress": "8.0.0",
+    "cypress-cucumber-preprocessor": "^2.5.0",
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "ignoreTestFiles": "*.js",
+  "testFiles": "**/*.{feature,features}",
+  "failOnStatusCode": false,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 20000,
+  "requestTimeout": 30000,
+  "e2e": {
+    "baseURL": "https://www.propertyfinder.bh",
+    "pageLoadWait": 500
+  }
+}

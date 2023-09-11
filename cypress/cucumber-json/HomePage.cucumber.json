@@ -1,0 +1,282 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "The PropertyFinder Search page",
+    "line": 1,
+    "id": "the-propertyfinder-search-page",
+    "tags": [],
+    "uri": "HomePage.feature",
+    "elements": [
+      {
+        "id": "the-propertyfinder-search-page;check-the-total-displayed-number-of-results-for-category-villas-with-price-range-more-than-or-equal-to-300,000-aed-/-yearly",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Check the total displayed number of results for category Villas with price range more than or equal to 300,000 AED / yearly",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open PropertyFinder page",
+            "result": {
+              "status": "passed",
+              "duration": 37512000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I see title of the page as \"Proper Finder BH\"",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "the-propertyfinder-search-page;as-a-user,-i-should-be-able-to-see-the-villa-in-the-property-type.",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "As a user, i should be able to see the Villa in the Property type.",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I open PropertyFinder page",
+            "result": {
+              "status": "passed",
+              "duration": 58115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I select Villa under property type",
+            "result": {
+              "status": "passed",
+              "duration": 288000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I see \"Villa\" in the list",
+            "result": {
+              "status": "passed",
+              "duration": 93000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I select Villa option",
+            "result": {
+              "status": "passed",
+              "duration": 308000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "the-propertyfinder-search-page;as-a-user,-i-should-be-able-to-search-for-property-with-300000-value",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "As a user, i should be able to search for property with 300000 value",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I click Price dropdown",
+            "result": {
+              "status": "passed",
+              "duration": 264000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Min price and Max price field should be visible",
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I enter price \"300000\" in Max price field",
+            "result": {
+              "status": "passed",
+              "duration": 1293000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I click on the Search icon",
+            "result": {
+              "status": "passed",
+              "duration": 4147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see the total number of results on UI and compare it with the API result",
+            "result": {
+              "status": "passed",
+              "duration": 752000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "the-propertyfinder-search-page;click-on-commercial-properties-only-checkbox-and-select-\"offices\"",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Click on commercial properties only checkbox and select \"offices\"",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I open PropertyFinder page",
+            "result": {
+              "status": "passed",
+              "duration": 3610000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I verify the default state for the Commercial Property Checkbox",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "I click on the Commercial Property Checkbox",
+            "result": {
+              "status": "passed",
+              "duration": 219000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I verify Commercial Property Checkbox is checked",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "I click on the Search icon",
+            "result": {
+              "status": "passed",
+              "duration": 3393000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I verify the Office link is visible",
+            "result": {
+              "status": "passed",
+              "duration": 102000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I click on the Offices link",
+            "result": {
+              "status": "passed",
+              "duration": 380000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "I verify the count of the Search results on UI and compare it with the API call",
+            "result": {
+              "status": "passed",
+              "duration": 2077000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I verify the count of the Search results on UI with the API calls",
+            "result": {
+              "status": "passed",
+              "duration": 1133000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "the-propertyfinder-search-page;search-for-property-by-location",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Search for property by location",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 40,
+            "name": "I open PropertyFinder page",
+            "result": {
+              "status": "passed",
+              "duration": 3318000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "I verify the results by location",
+            "result": {
+              "status": "passed",
+              "duration": 625000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
