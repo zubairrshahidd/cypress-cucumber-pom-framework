@@ -1,0 +1,37 @@
+name: Cypress Tests
+
+on:    
+  push:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+      - name: install dependencies
+        run: npm i
+        
+      - name: Install node modules
+        run: npm install
+
+      - name: Install cypress-cucumber-preprocessor
+        run: npm install --save-dev cypress-cucumber-preprocessor
+        
+      - name: Setup Cucumber html reporter
+        run: npm install multiple-cucumber-html-reporter
+        
+        
+      - name: Run cypress test
+        run: npx cypress run --spec 'cypress/integration/PropertyFinder/HomePage.feature'
+        env:
+          USERNAME: ${{ secrets.YOUR_USERNAME }}
+          USERPASSWORD: ${{ secrets.YOUR_PASSWORD }}
+          
+      - name: Generate HTML report
+        run: node ./cypress/cucumberReport.js  
+    
